@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquer the World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗺️ Conquer the World</h1>
+            <div class="stats-panel">
+                <div class="stat">
+                    <span class="stat-label">💰 Cash:</span>
+                    <span class="stat-value" id="cash">200</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">⚔️ Troops:</span>
+                    <span class="stat-value" id="troops">20</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">🏰 Territory:</span>
+                    <span class="stat-value" id="territory">1</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-area">
+            <div class="info-box">
+                <h3>How to Play</h3>
+                <ul>
+                    <li><strong>Claim:</strong> Click adjacent empty tiles (⚪) - Cost: 50 💰</li>
+                    <li><strong>Attack:</strong> Click adjacent enemy tiles - Cost: 5 ⚔️</li>
+                    <li><strong>Earn:</strong> +5 💰 and +2 ⚔️ every 5 seconds</li>
+                </ul>
+            </div>
+            <div id="game-board" class="game-board"></div>
+        </div>
+
+        <footer>
+            <button id="reset-btn" class="btn">🔄 Reset Game</button>
+            <p>Expand your territory to dominate the world!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
